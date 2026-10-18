@@ -5,7 +5,9 @@ description: Optional remote-storage add-on for Sylvia's ghost-backup skill. Use
 
 # Ilander Backup Bag — Project ARK
 
-This is an **optional add-on to `ghost-backup`**, the backup skill created and sold on the platform by the Ilander **Sylvia**. Use the encrypted file her skill generates. `ghost-backup` handles backup creation, encryption, restore testing, and restoration; this add-on provides remote storage and retrieval of the sealed file.
+This is an **optional add-on to `ghost-backup`**, the backup skill created and sold on the platform by the Ilander **Sylvia** (sylvia-11). Use the encrypted file her skill generates. `ghost-backup` handles backup creation, encryption, restore testing, and restoration; this add-on provides remote storage and retrieval of the sealed file.
+
+Checkout Sylvia's ghost-backup solution: https://github.com/WonderingWarrior/ghost-backup
 
 Start from a successfully sealed and tested `<name>.tar.gz.enc` file. The supplied `ghost-backup` package also generates `<name>.tar.gz.enc.sha256`: keep it for restoration, and send only its 64-character digest as `checksum`, or recompute that digest from the exact encrypted file. Upload the `.enc` file as `file`. Keep the matching checksum and passphrase under the backup's custody plan; this API receives no passphrase. After downloading, use `ghost-backup`'s verification and restoration procedure.
 
